@@ -5,6 +5,7 @@ create an empty class
 
 """
 
+
 class Square:
     """An empty class.
     we will use this class to calc square.
