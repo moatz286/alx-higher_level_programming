@@ -1,17 +1,30 @@
 #!/usr/bin/python3
 
+"""Square model."""
+
 
 class Square:
-    '''Initialize Class Square
-    '''
+    """Initialize Class Square
+    Methods
+    -------
+    area()
+        return size of square
+    my_print()
+        print the square with # in stdout
+    """
 
     def __init__(self, size=0):
-        '''init method of class Square
-        '''
+        """
+        Parameters
+        -----------
+        size(int):
+            size of square.
+        """
         self.size = size
 
     @property
     def size(self):
+        """get the value of square size"""
         return self.__size
 
     @size.setter
@@ -23,9 +36,11 @@ class Square:
         self.__size = size
 
     def area(self):
+        """Return size of square"""
         return (self.size * self.size)
 
     def my_print(self):
+        """print square with #"""
         if self.__size == 0:
             print()
             return

@@ -1,16 +1,20 @@
 #!/usr/bin/python3
 
+"""Square model."""
+
 
 class Square:
-    '''Inisialize Class Square
-    '''
+    """Inisialize Class Square
+    """
 
     def __init__(self, size=0, position=(0, 0)):
+        """"""
         self.size = size
         self.position = position
 
     @property
     def size(self):
+        """"""
         return self.__size
 
     @size.setter
@@ -22,4 +26,5 @@ class Square:
         self.__size = size
 
     def area(self):
+        """"""
         return (self.size * self.size)
