@@ -6,5 +6,8 @@ create an empty class
 """
 
 class Square:
-    """An empty class."""
+    """An empty class.
+    we will use this class to calc square.
+
+    """
     pass
