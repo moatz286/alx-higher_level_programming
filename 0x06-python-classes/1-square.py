@@ -6,7 +6,12 @@
 
 
 class Square:
-    """Square class with private instance attribute size"""
+    """Square class with private instance attribute size
+    Methods
+    -------
+    __init__
+        to init size value
+    """
 
     def __init__(self, size):
         """init function.
