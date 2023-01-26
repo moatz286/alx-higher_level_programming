@@ -2,3 +2,4 @@
 
 class Square:
     """ My first class"""
+    pass
