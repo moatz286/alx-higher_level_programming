@@ -4,11 +4,12 @@
 
 """
 
+
 class Square:
     """Square class with private instance attribute size"""
 
     def __init__(self, size):
-        """init function 
+        """init function.
 
         Args:
             size (int): int represent the square size.
