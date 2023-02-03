@@ -1,21 +1,17 @@
 #!/usr/bin/python3
-'''
-add_integer module
-'''
+"""
+Module to sum
+add_integer: adds two integers and return
+"""
 
 
-def add_integer(a, b):
+def add_integer(a, b=98):
+    """Return sum of a + b
+    Args: a = int/float b = int/float
     """
-    Return sum of a and b.
-    """
-    if type(a) == float:
-        a = int(a)
-    if type(b) == float:
-        b = int(b)
 
-    if not isinstance(a, int) or isinstance(a, bool):
-        raise TypeError("a must be an integer")
-    if not isinstance(b, int) or isinstance(b, bool):
-        raise TypeError("b must be an integer")
-
-    return ( a + b )
+    if isinstance(a, (int, float)) is False:
+        raise TypeError('a must be an integer')
+    if isinstance(b, (int, float)) is False:
+        raise TypeError('b must be an integer')
+    return int(a + b)
