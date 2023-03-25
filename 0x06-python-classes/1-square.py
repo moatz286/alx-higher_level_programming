@@ -6,18 +6,22 @@
 
 
 class Square:
-    """Square class with private instance attribute size
-    Methods
-    -------
-    __init__
-        to init size value
+    """
+    A class that defines a square.
+
+    Attributes:
+    __size (int): The size of the square.
+
+    Methods:
+    area(): Returns the area of the square.
     """
 
     def __init__(self, size):
-        """init function.
+        """
+        Initializes a new instance of the Square class with the given size.
 
         Args:
-            size (int): int represent the square size.
-
+        size (int): The size of the square.
         """
-        self._size = size
+
+        self.__size = size
