@@ -1,0 +1,26 @@
+# import the BaseGeometry class
+from BaseGeometry import BaseGeometry
+
+# create an instance of BaseGeometry
+bg = BaseGeometry()
+
+# test the area() method
+try:
+    bg.area()
+except Exception as e:
+    assert type(e) == Exception
+
+# test the integer_validator() method with a valid value
+assert bg.integer_validator("test", 5) == None
+
+# test the integer_validator() method with a non-integer value
+try:
+    bg.integer_validator("test", "not_an_integer")
+except TypeError as e:
+    assert str(e) == "test must be an integer"
+
+# test the integer_validator() method with a negative integer value
+try:
+    bg.integer_validator("test", -5)
+except ValueError as e:
+    assert str(e) == "test must be greater than 0"
