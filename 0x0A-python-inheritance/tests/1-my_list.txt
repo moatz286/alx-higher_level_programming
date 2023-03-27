@@ -1,0 +1,21 @@
+def test_my_list():
+    # create an instance of MyList
+    ml = MyList([3, 1, 4, 2])
+
+    # test that print_sorted method sorts and prints the list
+    ml.print_sorted()  # should print [1, 2, 3, 4]
+
+    # test that the original list is not modified
+    assert ml == [3, 1, 4, 2]
+
+    # test that an empty list is sorted and printed correctly
+    MyList([]).print_sorted()  # should print []
+
+    # test that a list of identical values is sorted and printed correctly
+    MyList([1, 1, 1]).print_sorted()  # should print [1, 1, 1]
+
+    # test that a list with negative values is sorted and printed correctly
+    MyList([3, -1, 4, -2]).print_sorted()  # should print [-2, -1, 3, 4]
+
+    # test that a list with duplicate values is sorted and printed correctly
+    MyList([3, 1, 4, 2, 4]).print_sorted()  # should print [1, 2, 3, 4, 4]
