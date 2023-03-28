@@ -3,8 +3,7 @@
 
 
 def write_file(filename="", text=""):
+    """Writes a string to a UTF8 text file
     """
-    Writes a string to a text file (UTF8) and returns the number of characters written
-    """
-    with open(filename, mode='w', encoding='utf-8') as file:
-        file.write(text)
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
