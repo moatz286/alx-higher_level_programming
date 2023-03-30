@@ -1,23 +1,24 @@
 #!/usr/bin/python3
 """
-Print string
+This module is composed by a function prints a message
 """
+
+
 def say_my_name(first_name, last_name=""):
-   """Concatenate both parameters and print
-   Parameters:
-   first_name = first name
-   last_name = last name
-   Local Variables:
-   fullname = empty string
-   Return: None
-   """
-    fullname = ""
-    if first_name and type(first_name) != str:
-        raise TypeError('first_name must be a string')
-    elif first_name and type(first_name) == str:
-        fullname += first_name + " "
-    if last_name and type(last_name) != str:
-        raise TypeError('last_name must be a string')
-    elif last_name and type(last_name) == str:
-        fullname += last_name
-    print("My name is {:s}".format(fullname))
+    """ Function that prints "My name is <first name> <last name>"
+    Args:
+        first_name: first name
+        last_name: last name
+    Returns:
+        No return
+    Raises:
+        TypeError: If first_name or last_name is not a string
+    """
+
+    if type(first_name) is not str:
+        raise TypeError("first_name must be a string")
+
+    if type(last_name) is not str:
+        raise TypeError("last_name must be a string")
+
+    print("My name is {} {}".format(first_name, last_name))
